@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './styles.css';
 
 const ImageList = ({ breed, numberOfImages }) => {
   const [images, setImages] = useState([]);
@@ -39,9 +40,11 @@ const ImageList = ({ breed, numberOfImages }) => {
   }
 
   return (
-    <div>
+    <div className="image-container">
       {images.map((imageUrl) => (
-        <img key={imageUrl} src={imageUrl} alt="Dog" />
+        <div key={imageUrl} className="image-item">
+          <img src={imageUrl} alt="Dog" />
+        </div>
       ))}
     </div>
   );

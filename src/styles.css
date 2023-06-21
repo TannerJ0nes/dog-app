@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Styles for the breed dropdown */
+.select-container {
+  position: relative;
+}
+
+.select-dropdown {
+  appearance: none;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 200px;
+  background-color: #fff;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='12' viewBox='0 0 16 12'%3E%3Cpath fill='%23000000' d='M14.53 0L8 6.6 1.47 0 0 1.42 8 9.4l8-7.98L14.53 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.select-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+
+.number-input {
+  appearance: none;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100px;
+  background-color: #fff;
+  position: relative;
+}
+
+.number-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.number-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-arrow::before,
+.number-arrow::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid #777;
+  border-right: 2px solid #777;
+  transform: rotate(45deg);
+}
+
+.number-arrow::after {
+  margin-top: -2px;
+  transform: rotate(-45deg);
+}
+
+
+/* styles.css */
+
+.button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom, #ff0000, #292929);
+  height: 100vh;
+}
+/* styles.css */
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-item {
+  margin: 10px;
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+

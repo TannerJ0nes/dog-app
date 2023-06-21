@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles.css';
 
 const SearchBar = ({ breeds, onSearch }) => {
   const [selectedBreed, setSelectedBreed] = useState('');
@@ -17,8 +18,9 @@ const SearchBar = ({ breeds, onSearch }) => {
   };
 
   return (
-    <div>
-      <select value={selectedBreed} onChange={handleBreedChange}>
+    <center>
+    <div className="select-container">
+      <select className="select-dropdown" value={selectedBreed} onChange={handleBreedChange}>
         <option value="">Select Breed</option>
         {breeds.map((breed) => (
           <option key={breed} value={breed}>
@@ -27,14 +29,16 @@ const SearchBar = ({ breeds, onSearch }) => {
         ))}
       </select>
       <input
+         className="number-input"
         type="number"
         min="1"
         max="100"
         value={numberOfImages}
         onChange={handleNumberChange}
       />
-      <button onClick={handleButtonClick}>Show Images</button>
+      <button className="button" onClick={handleButtonClick}>Show Images</button>
     </div>
+    </center>
   );
 };
 
