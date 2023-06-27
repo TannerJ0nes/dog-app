@@ -123,3 +123,10 @@ body {
   object-fit: cover;
 }
 
+/* styles.css */
+
+body {
+  background-image: url("mage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
