@@ -130,3 +130,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+h1 {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 5px 4px 2px 0px rgba(0, 0, 0, 0.25); /* Dropped shadow */
+  font-size: 60px; /* Adjust the font size to your needs */
+  font-family: 'Sinhala Sangam MN', sans-serif; /* Adjust the font family to your needs */
+  /* The following properties create the grey outline */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: grey;
+
+}
