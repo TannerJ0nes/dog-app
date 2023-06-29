@@ -1,3 +1,10 @@
+Here's Team 5's sprint Github!
+The following project is on the dog api
+Figma Design uploaded to submission teams portal.
+Names: Tanner Jones, Adian Holloawy, Jacob Jesso
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
